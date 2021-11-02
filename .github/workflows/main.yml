@@ -26,5 +26,5 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: bcine0831/action-test:latest
+          tags: cine0831/action-test:latest
           
