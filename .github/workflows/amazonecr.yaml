@@ -4,6 +4,17 @@ name: CI Amazon ECR
 on:
   push:
     branches: [ main ]
+    paths-ignore: 
+      - '.github/workflows/dockerhub.yaml'
+      - '.github/workflows/ghcr.yaml'
+  pull_request:
+    branches: 
+      - master
+    paths-ignore: 
+      - '.github/workflows/dockerhub.yaml'
+      - '.github/workflows/ghcr.yaml'
+      #- 'demo/**'
+      #- 'deployment/**'
 
 jobs:
   build:
