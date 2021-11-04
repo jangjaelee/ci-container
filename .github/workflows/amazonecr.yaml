@@ -44,3 +44,6 @@ jobs:
           platforms: linux/amd64
           push: true
           tags: ${{ steps.login-ecr.outputs.registry }}/ci-ecr:${{ github.sha }}
+
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
