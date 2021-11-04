@@ -28,3 +28,5 @@ jobs:
           push: true
           tags: cine0831/action-test:latest
           
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
