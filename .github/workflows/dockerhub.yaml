@@ -1,4 +1,4 @@
-name: CI TEST
+name: CI Docker Hub
 
 # Controls when the workflow will run
 on:
