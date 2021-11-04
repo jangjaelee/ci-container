@@ -1,4 +1,4 @@
-name: CI Docker Hub
+name: CI Amazon ECR
 
 # Controls when the workflow will run
 on:
@@ -43,4 +43,4 @@ jobs:
           file: ./Dockerfile
           platforms: linux/amd64
           push: true
-          tags: ${{ ECR_REGISTRY }}/${{ ECR_REPOSITORY }}:${{ IMAGE_TAG }}
+          tags: $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG
